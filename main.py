@@ -12,8 +12,9 @@ def get_weather_data(api_key, city):
         return None
 
 # Replace 'YOUR_API_KEY' with your actual API key
-api_key = 'YOUR_API_KEY'
-city = 'London'  # Replace with the city you want to get weather data for
+api_key = '2364f64cd75a4de7a01181441233105'
+
+city = input("Enter the city: ")
 
 weather_data = get_weather_data(api_key, city)
 if weather_data:
