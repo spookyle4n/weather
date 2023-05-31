@@ -18,7 +18,8 @@ city = input("Enter the city: ")
 
 weather_data = get_weather_data(api_key, city)
 if weather_data:
-    temperature = weather_data['current']['temp_c']
+    temperature_celsius = weather_data['current']['temp_c']
+    temperature_fahrenheit = weather_data['current']['temp_f']
     condition = weather_data['current']['condition']['text']
     
-    print(f"Current weather in {city}: {temperature}°C, {condition}")
+    print(f"Current weather in {city}: {temperature_fahrenheit}°F, {condition}")
